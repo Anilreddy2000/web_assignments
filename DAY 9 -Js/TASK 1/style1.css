@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+.product-small-img img{
+    height: 40px;
+    margin: 10px 0px;
+    cursor: pointer;
+    display: block;
+}
+.product-small-img{
+   float: left;
+   flex-direction: column;
+}
+.product{
+    display: flex;
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.img-container img{
+    height: 500px;
+}
+.img-container{
+    float: right;
+}

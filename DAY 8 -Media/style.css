@@ -1,0 +1,264 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    color: #172B4D;
+}
+
+.mainbar{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border: 0px 0px 4px 0px solid rgb(250, 15, 15);
+    background-color: #e5e5e5;
+    box-shadow: 0 2px 3px rgb(212, 185, 206);
+     
+}
+
+
+#logo_image{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color:rgba(227, 227, 228, 0.473);
+    margin: 10px 100px 0px 100px;
+}
+
+
+#menu_logo{
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+  margin: 0px 0px 0px 300px;;
+  padding: 0;
+  overflow: hidden;
+}
+
+.dropbtn{
+    float: left;
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+    margin-right: 30px;
+}
+.btn{
+    background-color: rgba(255, 0, 13, 0.555);
+    color: white;
+    width: 130px;
+    height: 40px;
+    float: right;
+    border: 1px solid rgba(255, 0, 0, 0.541);
+    border-radius: 5px;
+    margin: 10px 0px 0px 50px;
+    
+}
+p,h4{
+    
+    text-align: center;
+}
+p{
+    font-size: 30px;
+    
+    color: rgba(59, 4, 104, 0.932);
+}
+h4{
+    color: rgba(150, 143, 143, 0.753);
+}
+.mainblock{
+    width: 700px;
+    display: flex;
+   
+}
+.left_block{
+    float: left;
+    width: 600px;
+    height: 680px;
+    margin: 30px 0px 0px 250px;
+    background-color: #e5e5e5;
+}
+.right_block{
+    float: right;
+    width: 500px;
+    margin: 30px 0px 0px 10px;
+}
+#image1{
+    width: 250px;
+}
+#colour{
+    color: red;
+}
+.f1{
+    margin: 0px 0px 0px 20px;
+}
+#input{
+    padding: 10px;
+    width: 600px;
+    background-color: #e5e5e5;
+    border: 2px solid aliceblue;
+    box-shadow: rgb(1, 9, 17);
+}
+#input:hover{
+    background-color: white;
+}
+#input11{
+    padding: 10px;
+    width: 600px;
+    background-color: #e5e5e5;
+    border: 1px solid rgba(227, 227, 228, 0.473);
+    overflow-y:scroll;
+}
+#input11:hover{
+    background-color:white;
+}
+
+#button1{
+   
+    float: left;
+    width: 200px;
+    border: 2px solid #172B4D;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+    
+}
+#button1:hover{
+    background-color: #172B4D;
+}
+#button2{
+    
+    float: left;
+    width: 200px;
+    border: 2px solid #172B4D;
+    border-radius: 5px; 
+   margin-left: 50px !important;
+    margin:auto;
+    background-color: white;
+    padding: 5px;
+    
+}
+#button2:hover{
+    background-color: #172B4D;
+}
+.submit_btn{
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.692);
+    border: 1px solid rgba(255, 0, 0, 0.568);
+    border-radius: 3px;
+    color: white;
+}
+.submit_btn:hover{
+    background-color: red;
+}
+@media screen and  (max-width:600px){
+    body{
+        background-color:aliceblue;
+    }
+    .mainbar{
+        
+    }
+    #logo_image{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    p{
+        margin: auto;
+        flex-direction: column;
+        font-size: 1.5rem;
+        color: #172B4D;
+    }
+    h4{
+        text-align: center;
+        flex-direction:column ;
+        color: rgba(150, 143, 143, 0.753);
+    }
+    .mainblock{
+        flex-direction: column;
+        margin: auto;
+    }
+    .left_block{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .right_block{
+        margin-top: 50px !important;
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    #input{
+        width: auto;
+        margin: auto;
+    }
+    #input11{
+        width: auto;
+        margin: auto;
+    }
+    .section123123{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: auto;
+    }
+    
+    #button1{
+        display: inline;
+        flex-direction: column;
+        width: auto;
+        margin-top: 20px !important;
+        align-content: center;
+        
+    }
+    #button2{
+        display: inline;
+        flex-direction: column;
+        margin-top: 10px !important;
+        width: auto;
+        margin: auto;
+    }
+    
+}
+@media screen and (max-width:1200px){
+    .mainblock{
+        flex-direction: column;
+        margin:auto;
+    }
+
+    .left_block{
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        margin: auto;
+    }
+    #image_1{
+        align-content: center;
+    }
+    ol{
+        align-content: center;
+    }
+    .right_block{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .section123123{
+        flex-direction: column;
+        width: auto;
+        margin: auto;
+    }
+    
+}

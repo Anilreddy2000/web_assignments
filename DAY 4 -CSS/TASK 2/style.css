@@ -1,0 +1,101 @@
+*{
+    background-clip: inherit;
+    background-color: azure;
+}
+h2{
+    text-align: center;
+    color: red;
+    display: block;
+    width: 100%;
+    background-color: rgb(131, 114, 114);
+    margin: auto;
+    padding: 10px;
+}
+#pp{
+    color: rgb(54, 12, 88);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+.task1{
+    text-align: center;
+    background-color: bisque;
+    width: 1200px;
+    border: 2px dotted lightcoral;
+    margin: 2px;
+    padding: 40px 20px 40px 50px;
+    outline-style: dotted;
+    outline-color: blueviolet;
+    border: 2px solid black; 
+    word-spacing: 30px;
+    line-height: 40px;  
+}
+div{
+    border: 2px solid #ff4f44;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+h1{
+    text-transform: uppercase;
+    color:darkpink;
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+    letter-spacing: 5px;
+
+}
+#first{
+    text-align: center;
+    text-decoration: wavy;
+    text-transform: uppercase;
+    color: #0d2bd1;
+    border: #0d2bd1;
+}
+#second{
+    text-align: left;
+    text-decoration:dotted
+}
+#third{
+    text-align: right;
+    text-decoration: dotted;
+}
+ul.a{
+    list-style-position: inside;
+}
+ul.b{
+    list-style-position: outside;
+}
+ul{
+    background-color: bisque;
+    padding: 20px;
+}
+ul li{
+    background-color:lightgreen;
+    color: black;
+    padding: 30px;
+    margin-left: 30px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #331b1b;
+}
+th{
+    height: 70px;
+}
+td{
+    text-align: center;
+}
+.one{
+    overflow-x: auto;
+}
+tr:nth-child(even){
+    background-color: rgb(177, 100, 48);
+}
+#ending{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}

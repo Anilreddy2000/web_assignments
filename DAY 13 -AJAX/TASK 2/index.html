@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Window</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+        "Browser inner window width: " + window.innerWidth + "px<br>" +
+        "Browser inner window height: " + window.innerHeight + "px <br>" +
+        "Screen width is " + screen.width;
+        document.getElementById("demo").innerHTML =
+        navigator.userAgent;
+    </script>
+
+    <h3>The window.location object</h3>
+
+    <input type="button" value="Load new document" onclick="newDoc()"> <br> <br>
+    <input type="button" value="forward" onclick="goforward()"> <br> <br>
+    <button onclick="myfn()"><a href="https://www.google.com" target="_blank">this is another site</a></button>
+    <p id="dfg"></p>
+    <script>
+        function myfn(){
+            document.cookie="username:anil";
+            document.cookie="password:rtyugv1234";
+            document.getElementById("dfg").textContent=document.cookie;
+
+        }
+    function newDoc() {
+      window.location.assign("https://www.google.com")
+    }
+    function goForward() {
+        window.history.forward()
+    }
+    </script>
+</body>
+</html>

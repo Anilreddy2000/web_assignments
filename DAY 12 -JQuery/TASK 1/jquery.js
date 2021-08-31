@@ -1,0 +1,27 @@
+$(document).ready(function(){
+    $("#hide1").click(function(){
+     $("p").hide();
+    });
+    $("#show1").click(function(){
+    $("p").show();
+    });
+    $("#features").click(function(){
+        $("li").toggle();
+    });
+    $("#fadein").click(function(){
+        $("#div11").fadeIn(3000);
+        $("#div22").fadeIn(6000);
+        $("#div33").fadeIn(9000);
+    });
+    $("#fadeout").click(function(){
+        $("#div11").fadeOut(9000);
+        $("#div22").fadeOut(5000);
+        $("#div33").fadeOut(1000);
+    });
+    $("#fadetoggle").click(function(){
+        $("#div11").fadeToggle(9000);
+        $("#div22").fadeToggle(5000);
+        $("#div33").fadeToggle(1000);
+    });
+    
+   });

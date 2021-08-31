@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Putting User Input into JS Objects</title>
+    <style>
+        .formBox{
+            padding: 0.5rem 2rem;
+        }
+    </style>
+</head>
+<body onload="main()">
+    <form>
+        <div class="formBox">
+            <label for="title">Movie</label>
+            <input type="text" id="title" placeholder="Title" required/>
+        </div>
+        <div class="formBox">
+            <label for="yr">Year</label>
+            <input type="date" id="yr" placeholder="Year" required/>
+        </div>
+        <div class="formBox">
+            <button id="btn">click to add</button>
+        </div>
+        <div id="msg">
+        
+        </div>
+    </form>
+    <script>
+        function main(){
+            let movies = [];
+        const addMovie = (ev)=>{
+            ev.preventDefault();  //to stop the form submitting
+            let movie = {
+                id: Date.now(),
+                title: document.getElementById('title').value,
+                year: document.getElementById('yr').value
+            }
+            movies.push(movie);
+            document.forms[0].reset(); // to clear the form for the next entries
+            //document.querySelector('form').reset();
+
+            //for display purposes only
+            //console.warn('added' , {movies} );
+            //let pre = document.querySelector('#msg');
+            //pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
+
+            localStorage.setItem('MyMovieList', JSON.stringify(movies) );
+            sessionStorage.setItem('MyMovieList', JSON.stringify(movies) );
+
+            
+        }
+       
+        
+            document.getElementById('btn').addEventListener('click',function(){
+                document.cookie = 'MyMovieList='+movies + 'expires=' + new Date(20211,1,1).toUTCString()
+
+            });
+        }
+        
+    </script>
+</body>
+</html>
